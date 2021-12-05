@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .075);
+}
+
+.header h1 {
+    font: size 1.5rem;
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.app__header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    max-width: 100%;
+    padding: 10px 20px;
+}
+
+.btn {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn,
+.form__input {
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .075);
+    border: 1px solid rgb(206, 204, 204);
+}
+
+.btn__add {
+    background-color: rgb(47, 47, 247);
+    color: white;
+    cursor: pointer;
+    height: 40px;
+}
+
+.form__input {
+    background-color: whitesmoke
+}
+
+.btn__search {
+    cursor: pointer;
+    background-color: darkgreen;
+    color: white
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.app__table {
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+}
+
+table,
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+thead {
+    background-color: #ccc;
+}
+
+tbody tr:hover {
+    background-color: rgb(240, 237, 237);
+    cursor: pointer;
+}
+
+.select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.app__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--action {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.btn--delete {
+    background-color: red;
+    color: white;
+}
+
+.btn--edit {
+    background-color: yellow;
+    color: rgb(46, 46, 46);
+}
+
+.app__navigation {
+    margin-bottom: 10px;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline
+}
+
+.page-item a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(192, 192, 192);
+    color: rgb(43, 42, 42);
+    border-radius: 4px;
+}
+
+.page-item a:first-child {
+    margin-right: 7px;
+}
+
+.page-item .item--active {
+    background-color: rgb(154, 155, 155);
+}
+
+.item--select:hover {
+    background-color: rgb(154, 155, 155);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.301);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__completed {
+    display: none;
+}
+
+.modal__content {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.model__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__input {
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .075);
+    border: 1px solid rgb(206, 204, 204);
+    margin-bottom: 20px;
+}
+
+.modal__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal__input:focus {
+    outline: none;
+}
+
+.modal__action {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+
+.btn-model {
+    cursor: pointer;
+}
+
+.btn-model__back {
+    background-color: rgb(97, 96, 96);
+    color: white;
+}
+
+.btn-model__add {
+    background-color: rgb(224, 121, 24);
+    color: white;
+}
+
+.modal__close i {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+}
